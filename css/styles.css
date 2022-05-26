@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+body{
+    background-color: rgb(68, 66, 66);
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+/*INICIO ESTILO NAV*/
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+i{
+    cursor: pointer;
+}
+
+.logo{
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+.contenedor{
+  height: 60px;
+  width: 95%;
+  margin: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav ul{
+    display: flex;
+
+}
+
+.nav ul li{
+    padding: 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}
+
+/*FIN ESTILO NAV*/
+
+/*COMIENZO SECCION IMPRESION 3D*/
+
+.seccion-primera{
+  width: 100%;
+  height: 550px;
+  background: url(/img/impresion3d.jpeg) no-repeat center center/cover;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin: 5px 0px 5px 0px;
+}
+
+.text-color{
+    background-color: rgb(0, 0, 0);
+}
+/*FIN SECCION IMPRESION 3D*/
+
+/*COMIENZO SECCION PIEZAS IMPRESAS*/
+
+
+.piezas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:25px;
+    margin: 10px 2px;
+    border: 4px dotted rgb(0, 0, 0);
+}
+
+.piezas-impresas{
+    width:200px;
+    margin: auto;
+}
+
+.fotos{
+    width: 100%;
+    height: 200px;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+/*FIN SECCION PIEZAS IMPRESAS*/
+
+/*INICIO SECCION TIPOS DE IMPRESORAS*/
+
+.tipos-de-impresoras{
+    background:url(/img/tipodeimpresora.jpeg) no-repeat center center/cover;
+    height: 250px;
+    margin:5px 0px 5px 0px;
+    display: flex;
+    align-items:flex-end;
+    padding-left: 10px;
+}
+.tipos-de-impresoras__div{
+    margin-bottom: 20px;
+}
+
+.texto-impresoras{
+    background-color: rgb(0, 0, 0);
+    display: inline;
+}
+.texto-impresoras__p{
+    background-color: rgb(0, 0, 0);
+}
+
+/*FIN SECCION TIPOS DE IMPRESORAS*/
+
+/*INICIO FOOTER*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    font-size: 30px;
+    margin-top: 70px;
+}
+.media{
+    font-size: 50px;
+    margin: auto;
+}
+
+.copy{
+    background-color: rgb(43, 44, 44);
+    margin-top: 20px;
+    height: 100px;
+    display: block;
+}
+
+.copy p{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    color: rgb(128, 128, 128);
+}
+/*FIN FOOTER*/
+
+
+/*FORM PAGINA CONTACTO*/
+
+.contenedor-form .form .encabezado-form .titulo-form{
+    font-weight: normal;
+    text-align: center;
+    padding: 14px 0px;
+}
+
+.contenedor-form .form{
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 5px 35px 30px 35px;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+.contenedor-form .form .form-label{
+    display: block;
+    color: #5f5e5d;
+    font-size: 16px;
+    position: relative;
+}
+
+.contenedor-form .form .form-input, .form-textarea{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #535353;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.contenedor-form .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.contenedor-form .form .btn-submit{
+    width: 100%;
+    outline: none;
+    background: #4d4c4c;
+    font-size: 16px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form .form .btn-submit:hover {
+    background: #f5f4f3;
+    color: rgb(0, 0, 0);
+
+}
+
+/*CARROUSEL PIEZAS IMPRESAS*/
+.carrousel{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: rgb(255, 255, 255);
+}
+
+.piezas__pla{
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+}
+.pieza_pla{
+    margin: 20px 0px;
+}
+
+/* PAGINA IMPRESION 3D*/
+
+.contenedor-impresion3d{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+/*PAGINA TIPOS DE IMPRESORA */
+.tipos-de-impresora{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+    margin:10px;
+}
+
+.tipos-3d{
+    width: 400px;
+    height: 400px;
+    margin-top: 70px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.tipos-3ds{
+    width: 400px;
+    height: 400px;
+    margin-top: 120px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.nav ul.nav-menu.show{
+    transform: translateX(-5px);
+}
+
+@media (max-width: 768px) {
+    .nav ul.nav-menu{
+        display:block;
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-400px); /*-5*/
+        padding: 30px;
+        opacity: .9;
+        background-color: #4d4c4c;
+        z-index: 3;
+        transition: transform .5s ease-in-out;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .btn-search{
+        margin: 7px 50px 0px 0px;
+    }
+    .seccion-primera{
+        text-align: justify;
+    }
+    .piezas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedor-impresion3d{
+        grid-template-columns: 1fr;
+    }
+    .video-youtube{
+        height: 300px;
+        width: 350px;
+    }
+    .tipos-de-impresora{
+        display: inline-block;
+    }
+    .tipos-3d{
+        width: 300px;
+        height: 300px;
+    }
+    .tipos-3ds{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+}  
+
+@media (max-width: 390px) {
+    .nav ul.nav-menu{
+        display:block;
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-250px); /*-25*/
+        padding: 20px;
+        opacity: .9;
+        background-color: #4d4c4c;
+        z-index: 3;
+        transition: transform .5s ease-in-out;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .btn-search{
+        margin: 7px 50px 0px 0px;
+    }
+    .piezas{
+        grid-template-columns: 1fr;
+    }
+    .contenedor-impresion3d{
+        grid-template-columns: 1fr;
+    }
+    .tipos-de-impresora{
+        display: inline-block;
+    }
+    .tipos-3d{
+        width: 300px;
+        height: 300px;
+    }
+    .tipos-3ds{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+} 
